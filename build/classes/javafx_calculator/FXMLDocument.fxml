@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DisplacementMap?>
+<?import javafx.scene.effect.FloatMap?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="510.0" prefWidth="586.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx_calculator.FXMLDocumentController">
+    <children>
+      <Pane prefHeight="510.0" prefWidth="586.0" style="-fx-background-color: #070650;">
+         <children>
+            <Label fx:id="labelDisplay" alignment="CENTER" contentDisplay="CENTER" layoutX="42.0" layoutY="41.0" prefHeight="64.0" prefWidth="357.0" style="-fx-background-color: #008b8b;" textAlignment="CENTER" textFill="AZURE" wrapText="true">
+               <effect>
+                  <Glow level="0.45">
+                     <input>
+                        <DisplacementMap>
+                           <mapData>
+                              <FloatMap />
+                           </mapData>
+                        </DisplacementMap>
+                     </input>
+                  </Glow>
+               </effect>
+               <font>
+                  <Font size="13.0" />
+               </font></Label>
+            <Button fx:id="button1" alignment="CENTER" contentDisplay="CENTER" layoutX="52.0" layoutY="176.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #6e9a66;" text="1" textAlignment="CENTER" textFill="WHITE" onAction="#handleButton1" >
+               <font>
+                  <Font name="Bernard MT Condensed" size="13.0" />
+               </font>
+               
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding></Button>
+            <Button fx:id="button2" alignment="CENTER" contentDisplay="CENTER" layoutX="114.0" layoutY="176.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #6e9a66;" text="2" textAlignment="CENTER" textFill="WHITE" onAction="#handleButton2">
+               <font>
+                  <Font name="Bernard MT Condensed" size="13.0" />
+               </font>
+               
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding></Button>
+            <Button fx:id="button3" alignment="CENTER" contentDisplay="CENTER" layoutX="179.0" layoutY="176.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #6e9a66;" text="3" textAlignment="CENTER" textFill="WHITE" onAction="#handleButton3">
+               <font>
+                  <Font name="Bernard MT Condensed" size="13.0" />
+               </font>
+               
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding></Button>
+            <Button fx:id="buttonClear" alignment="CENTER" contentDisplay="CENTER" layoutX="362.0" layoutY="176.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #ff2438;" text="C" textAlignment="CENTER" textFill="WHITE" >
+               <font>
+                  <Font name="Bernard MT Condensed" size="13.0" />
+               </font>
+               
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding></Button>
+            <Button fx:id="button4" alignment="CENTER" contentDisplay="CENTER" layoutX="52.0" layoutY="237.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #6e9a66;" text="4" textAlignment="CENTER" textFill="WHITE" onAction="#handleButton4">
+               <font>
+                  <Font name="Bernard MT Condensed" size="13.0" />
+               </font>
+               
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding></Button>
+            <Button fx:id="button5" alignment="CENTER" contentDisplay="CENTER" layoutX="114.0" layoutY="237.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #6e9a66;" text="5" textAlignment="CENTER" textFill="WHITE" onAction="#handleButton5">
+               <font>
+                  <Font name="Bernard MT Condensed" size="13.0" />
+               </font>
+               
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding></Button>
+            <Button fx:id="button6" alignment="CENTER" contentDisplay="CENTER" layoutX="179.0" layoutY="237.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #6e9a66;" text="6" textAlignment="CENTER" textFill="WHITE" onAction="#handleButton6">
+               <font>
+                  <Font name="Bernard MT Condensed" size="13.0" />
+               </font>
+               
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding></Button>
+            <Button fx:id="buttonAdd" alignment="CENTER" contentDisplay="CENTER" layoutX="361.0" layoutY="237.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #f5deb2;" text="+" textAlignment="CENTER" onAction="#handleButtonAdd">
+               <font>
+                  <Font name="Bernard MT Condensed" size="13.0" />
+               </font>
+               
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding></Button>
+            <Button fx:id="button7" alignment="CENTER" contentDisplay="CENTER" layoutX="52.0" layoutY="302.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #6e9a66;" text="7" textAlignment="CENTER" textFill="WHITE" onAction="#handleButton7">
+               <font>
+                  <Font name="Bernard MT Condensed" size="13.0" />
+               </font>
+               
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding></Button>
+            <Button fx:id="button8" alignment="CENTER" contentDisplay="CENTER" layoutX="114.0" layoutY="302.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #6e9a66;" text="8" textAlignment="CENTER" textFill="WHITE" onAction="#handleButton8">
+               <font>
+                  <Font name="Bernard MT Condensed" size="13.0" />
+               </font>
+               
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding></Button>
+            <Button fx:id="button9" alignment="CENTER" contentDisplay="CENTER" layoutX="179.0" layoutY="302.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #6e9a66;" text="9" textAlignment="CENTER" textFill="WHITE" onAction="#handleButton9">
+               <font>
+                  <Font name="Bernard MT Condensed" size="13.0" />
+               </font>
+               
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding></Button>
+            <Button fx:id="buttonMinus" alignment="CENTER" contentDisplay="CENTER" layoutX="363.0" layoutY="302.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="34.0" style="-fx-background-color: #dda0dd;" text="-" textAlignment="CENTER" onAction="#handleButtonMinus">
+               <font>
+                  <Font name="Times New Roman" size="24.0" />
+               </font>
+               
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding></Button>
+            <Button fx:id="buttonDecimal" alignment="CENTER" contentDisplay="CENTER" layoutX="52.0" layoutY="369.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #9e456f;" text="Del" textAlignment="CENTER" textFill="WHITE" onAction="#handleButtonClear">
+               <font>
+                  <Font name="Bernard MT Condensed" size="13.0" />
+               </font>
+               
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding></Button>
+            <Button fx:id="button0" alignment="CENTER" contentDisplay="CENTER" layoutX="114.0" layoutY="369.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #6e9a66;" text="0" textAlignment="CENTER" textFill="WHITE" onAction="#handleButton0">
+               <font>
+                  <Font name="Bernard MT Condensed" size="13.0" />
+               </font>
+               
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding></Button>
+            <Button fx:id="buttonMultiply" alignment="CENTER" contentDisplay="CENTER" layoutX="179.0" layoutY="369.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #ba763a;" text="x" textAlignment="CENTER" textFill="WHITE" onAction="#handleButtonMultiply">
+               <font>
+                  <Font name="Bernard MT Condensed" size="13.0" />
+               </font>
+               
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding></Button>
+            <Button fx:id="buttonDivide" alignment="CENTER" contentDisplay="CENTER" layoutX="361.0" layoutY="369.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #808000;" text="/" textAlignment="CENTER" textFill="WHITE" onAction="#handleButtonDivide">
+               <font>
+                  <Font name="Bernard MT Condensed" size="13.0" />
+               </font>
+               
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding></Button>
+            <Button fx:id="buttonAnswer" alignment="CENTER" contentDisplay="CENTER" layoutX="84.0" layoutY="433.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="282.0" style="-fx-background-color: #6a1f6b;" text="=" textAlignment="CENTER" textFill="WHITE" onAction="#handleButtonEqual">
+               <font>
+                  <Font name="Bernard MT Condensed" size="13.0" />
+               </font>
+               
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding></Button>
+            <Label fx:id ="labelAnswer" alignment="CENTER" layoutX="43.0" layoutY="105.0" prefHeight="48.0" prefWidth="357.0" style="-fx-background-color: #741a;" text="Answer Will Appear here" textAlignment="CENTER" textFill="WHITE" >
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="442.0" layoutY="471.0" prefHeight="36.0" prefWidth="144.0" text="\@ Levin_Calc" textAlignment="CENTER" textFill="#47c9a2">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="123.0" fitWidth="177.0" layoutX="412.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/javafx_calculator/Nature_1400_2.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="123.0" fitWidth="177.0" layoutX="412.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/javafx_calculator/Nature_1400_2.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="123.0" fitWidth="177.0" layoutX="412.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/javafx_calculator/Nature_1400_2.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="123.0" fitWidth="177.0" layoutX="412.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/javafx_calculator/Nature_1400_2.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="button31" alignment="CENTER" contentDisplay="CENTER" layoutX="237.0" layoutY="176.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #6e9a66;" text="sin" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Bernard MT Condensed" size="13.0" />
+               </font>
+               
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+            <Button fx:id="button311" alignment="CENTER" contentDisplay="CENTER" layoutX="237.0" layoutY="237.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #6e9a66;" text="cos" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Bernard MT Condensed" size="13.0" />
+               </font>
+               
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+            <Button fx:id="button3111" alignment="CENTER" contentDisplay="CENTER" layoutX="237.0" layoutY="302.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #6e9a66;" text="tan" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Bernard MT Condensed" size="13.0" />
+               </font>
+               
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+            <Button fx:id="button312" alignment="CENTER" contentDisplay="CENTER" layoutX="293.0" layoutY="176.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #6e9a66;" text="asin" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Bernard MT Condensed" size="13.0" />
+               </font>
+               
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+            <Button fx:id="button3112" alignment="CENTER" contentDisplay="CENTER" layoutX="293.0" layoutY="237.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #6e9a66;" text="acos" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Bernard MT Condensed" size="13.0" />
+               </font>
+               
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+            <Button fx:id="button31111" alignment="CENTER" contentDisplay="CENTER" layoutX="293.0" layoutY="302.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #6e9a66;" text="atan" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Bernard MT Condensed" size="13.0" />
+               </font>
+               
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+            <Button fx:id="button31112" alignment="CENTER" contentDisplay="CENTER" layoutX="237.0" layoutY="369.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #6e9a66;" text="sqrt" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Bernard MT Condensed" size="13.0" />
+               </font>
+               
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+            <Button fx:id="button311121" alignment="CENTER" contentDisplay="CENTER" layoutX="293.0" layoutY="369.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #6e9a66;" text="sq" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Bernard MT Condensed" size="13.0" />
+               </font>
+               
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>
